@@ -14,7 +14,7 @@ dp = Dispatcher()
 
 
 def get_weather_text() -> str:
-    weather = pywttr.get_weather('Saint-Petersburg', pywttr.Language.RU)
+    weather = pywttr.get_weather('Saint-Petersburg')
     date = weather.weather[0].date
     temperature = weather.weather[0].avgtemp_c
     sunrise_time = weather.weather[0].astronomy[0].sunrise
